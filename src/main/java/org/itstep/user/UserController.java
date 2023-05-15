@@ -102,7 +102,8 @@ public class UserController {
         if(roles != null) {
             for (int i = 0; i < roles.length; i++) {
 
-//System.out.println(roles[i]);rolesNew.add(roleService.findById(roles[i]));
+//System.out.println(roles[i]);
+rolesNew.add(roleService.findById(roles[i]));
             }
         }
         User userDb = userService.findById(user.getId());
@@ -121,4 +122,6 @@ public class UserController {
         userService.deleteById(id);
         return "redirect:/users";
     }
+
 }
+

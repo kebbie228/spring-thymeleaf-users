@@ -1,5 +1,12 @@
 package org.itstep.user;
-
+//https://github.com/KirillovItstep/spring-users
+//https://github.com/KirillovItstep/spring-users
+// https://github.com/KirillovItstep/spring-users
+// https://github.com/KirillovItstep/spring-users
+// https://github.com/KirillovItstep/spring-users
+// https://github.com/KirillovItstep/spring-users
+// https://github.com/KirillovItstep/spring-users
+//
 import lombok.Data;
 import org.itstep.role.Role;
 

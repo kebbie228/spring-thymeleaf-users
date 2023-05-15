@@ -50,14 +50,13 @@ role.name
                     <td th:if="${user.enabled}" class="text-center"><i class="bi-check"></i></td>
                     <td th:unless="${user.enabled}" class="text-center"><i class="bi-x"></i></td>
                     <td>
-                        <a th:href="@{/edit_user(id=${
-user.id
-})}"><i class="bi-pencil-fill"></i></a>
+                        <a th:href="@{/edit_user(id=${user.id})}"><i class="bi-pencil-fill"></i></a>
                         <a href="#" th:data-id="${
 user.id
 }" th:data-username="${user.username}" data-bs-toggle="modal" data-bs-target="#deleteModal" id="aDelete">
                             <i class="bi-eraser-fill"></i></a>
                     </td>
+                    <td>    <a th:href="@{/edit_user(id=${user.id})}"><i class="bi-pencil-fill"></i></a></td>
                 </tr>
                 </tbody>
             </table>
