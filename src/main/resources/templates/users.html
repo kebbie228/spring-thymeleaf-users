@@ -55,8 +55,10 @@ role.name
 user.id
 }" th:data-username="${user.username}" data-bs-toggle="modal" data-bs-target="#deleteModal" id="aDelete">
                             <i class="bi-eraser-fill"></i></a>
+                <tr>
+                    <td>
+                        <a th:href="@{/create_user}"><i class="bi-pencil-fill"></i></a>
                     </td>
-                    <td>    <a th:href="@{/edit_user(id=${user.id})}"><i class="bi-pencil-fill"></i></a></td>
                 </tr>
                 </tbody>
             </table>

@@ -122,6 +122,12 @@ rolesNew.add(roleService.findById(roles[i]));
         userService.deleteById(id);
         return "redirect:/users";
     }
+    @GetMapping(value ="/create_user")
+    public String createUser(Model model) {
 
+        model.addAttribute("user",new User());
+        model.addAttribute("roles",roleService.findAll());
+        return "create_user";
+    }
 }
 
